@@ -1,0 +1,35 @@
+{
+  "name": "phoenix-cli",
+  "version": "0.0.1",
+  "description": "Phoenix cli",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "phoenix",
+    "cli"
+  ],
+  "author": "wanglk <wlk90god@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Phoenix-org/phoenix-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/Phoenix-org/phoenix-cli/issues"
+  },
+  "homepage": "https://github.com/Phoenix-org",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "execa": "^4.0.3",
+    "listr": "^0.14.3",
+    "meow": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/execa": "^2.0.0",
+    "@types/listr": "^0.14.2",
+    "@types/node": "^14.0.26",
+    "typescript": "^3.9.7"
+  }
+}
