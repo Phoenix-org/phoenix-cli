@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "module": "commonjs",
-    "outDir": "dist",
+    "outDir": "bin",
     "moduleResolution": "node",
-    "strict": false,
+    "strict": true,
     "noEmit": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
