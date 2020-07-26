@@ -7,7 +7,7 @@ import chalk from "chalk";
 const cli = meow(
   `
   Usage
-   $ phoenix-cli <input>
+   $ phoenix-cli <source>
 
   Options
    --rainbow, -r  Include a rainbow
