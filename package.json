@@ -1,8 +1,8 @@
 {
   "name": "phoenix-cli",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Phoenix cli",
-  "main": "dist/index.js",
+  "main": "bin/index.js",
   "bin": {
     "phoenix-cli": "dist/index.js"
   },
