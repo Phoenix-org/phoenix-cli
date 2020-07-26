@@ -1,8 +1,11 @@
 {
   "name": "phoenix-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Phoenix cli",
   "main": "dist/index.js",
+  "bin": {
+    "phoenix-cli": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc"
   },
