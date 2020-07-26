@@ -4,8 +4,8 @@ import path from "path";
 import execa from "execa";
 import chalk from "chalk";
 
-const cli = meow(
-  `
+const cli = meow({
+  help: `
   Usage
    $ phoenix-cli <source>
 
@@ -13,18 +13,11 @@ const cli = meow(
    --rainbow, -r  Include a rainbow
 
   Examples
-   $ foo unicorns --rainbow
-   🌈 unicorns 🌈
-`,
-  {
-    flags: {
-      rainbow: {
-        type: "boolean",
-        alias: "r",
-      },
-    },
-  }
-);
+   $ phoenix-cli --rainbow
+   🌈 phoenix-cli 🌈
+  `,
+  description: false,
+});
 
 const source = cli.input[0];
 const PWD = process.cwd();
