@@ -28,7 +28,7 @@ const DIR = path.resolve(PWD, source);
 (() => {
   const tasks = new Listr([
     {
-      title: `Create Project ${DIR}`,
+      title: `Create Project ${source}`,
       task: () => {
         return execa.commandSync(`mkdir ${DIR}`);
       },
@@ -43,10 +43,14 @@ const DIR = path.resolve(PWD, source);
     },
     {
       title: "Install Modules",
-      task: () => {
-        // execa.commandSync(`cd ${DIR} && rm -rf .git && yarn`);
-        execa("node", [`cd ${DIR}`, "rm -rf .git", "yarn"]);
+      task: async () => {
+        await execa("sh", ["-c", `cd ${DIR} && rm -rf .git && yarn`]);
+        return true;
       },
+    },
+    {
+      title: "Done",
+      task: () => {},
     },
   ]);
 
